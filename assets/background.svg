@@ -1,0 +1,87 @@
+<svg viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a2332;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0f1720;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a0f15;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo gradiente oscuro -->
+  <rect width="1200" height="800" fill="url(#bgGrad)"/>
+  
+  <!-- Patrón de puntos sutiles -->
+  <circle cx="100" cy="100" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="200" cy="150" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="300" cy="200" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="400" cy="120" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="500" cy="250" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="600" cy="180" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="700" cy="300" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="800" cy="150" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="900" cy="220" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="1000" cy="100" r="1" fill="#3a4a5a" opacity="0.3"/>
+  <circle cx="1100" cy="280" r="1" fill="#3a4a5a" opacity="0.3"/>
+  
+  <!-- Engranaje grande (izquierda arriba) -->
+  <g opacity="0.15">
+    <circle cx="80" cy="120" r="35" fill="none" stroke="#7a9aaa" stroke-width="2"/>
+    <circle cx="80" cy="120" r="25" fill="none" stroke="#7a9aaa" stroke-width="1"/>
+    <rect x="73" y="92" width="14" height="8" fill="#7a9aaa"/>
+    <rect x="73" y="148" width="14" height="8" fill="#7a9aaa"/>
+    <rect x="52" y="113" width="8" height="14" fill="#7a9aaa"/>
+    <rect x="108" y="113" width="8" height="14" fill="#7a9aaa"/>
+  </g>
+  
+  <!-- Engranaje mediano (centro arriba) -->
+  <g opacity="0.12">
+    <circle cx="450" cy="110" r="30" fill="none" stroke="#6a8a9a" stroke-width="2"/>
+    <circle cx="450" cy="110" r="20" fill="none" stroke="#6a8a9a" stroke-width="1"/>
+    <rect x="444" y="85" width="12" height="7" fill="#6a8a9a"/>
+    <rect x="444" y="148" width="12" height="7" fill="#6a8a9a"/>
+    <rect x="427" y="104" width="7" height="12" fill="#6a8a9a"/>
+    <rect x="486" y="104" width="7" height="12" fill="#6a8a9a"/>
+  </g>
+  
+  <!-- Engranaje derecha -->
+  <g opacity="0.14">
+    <circle cx="950" cy="180" r="40" fill="none" stroke="#7a9aaa" stroke-width="2"/>
+    <circle cx="950" cy="180" r="28" fill="none" stroke="#7a9aaa" stroke-width="1"/>
+    <rect x="942" y="145" width="16" height="9" fill="#7a9aaa"/>
+    <rect x="942" y="226" width="16" height="9" fill="#7a9aaa"/>
+    <rect x="915" y="172" width="9" height="16" fill="#7a9aaa"/>
+    <rect x="986" y="172" width="9" height="16" fill="#7a9aaa"/>
+  </g>
+  
+  <!-- Gota de aceite 1 (arriba izquierda) -->
+  <g opacity="0.18">
+    <path d="M 150 70 Q 150 50 160 40 Q 170 50 170 70 Q 170 85 160 95 Q 150 85 150 70" fill="none" stroke="#8abaaa" stroke-width="2"/>
+  </g>
+  
+  <!-- Gota de aceite 2 (arriba centro) -->
+  <g opacity="0.16">
+    <path d="M 480 60 Q 480 40 492 30 Q 504 40 504 60 Q 504 78 492 88 Q 480 78 480 60" fill="none" stroke="#7aaa9a" stroke-width="2"/>
+  </g>
+  
+  <!-- Gota de aceite 3 (arriba derecha) -->
+  <g opacity="0.14">
+    <path d="M 820 90 Q 820 70 832 60 Q 844 70 844 90 Q 844 108 832 118 Q 820 108 820 90" fill="none" stroke="#6a9a8a" stroke-width="2"/>
+  </g>
+  
+  <!-- Herramienta (llave inglesa derecha) -->
+  <g opacity="0.13">
+    <line x1="1020" y1="130" x2="1100" y2="50" stroke="#7a9aaa" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="1020" cy="130" r="8" fill="none" stroke="#7a9aaa" stroke-width="2"/>
+    <circle cx="1085" cy="65" r="10" fill="none" stroke="#7a9aaa" stroke-width="2"/>
+  </g>
+  
+  <!-- Engranaje pequeño (centro) -->
+  <g opacity="0.11">
+    <circle cx="600" cy="380" r="28" fill="none" stroke="#5a7a8a" stroke-width="2"/>
+    <circle cx="600" cy="380" r="18" fill="none" stroke="#5a7a8a" stroke-width="1"/>
+    <rect x="594" y="357" width="12" height="7" fill="#5a7a8a"/>
+    <rect x="594" y="436" width="12" height="7" fill="#5a7a8a"/>
+    <rect x="577" y="374" width="7" height="12" fill="#5a7a8a"/>
+    <rect x="636" y="374" width="7" height="12" fill="#5a7a8a"/>
+  </g>
+</svg>

@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Lubricentro de la Kombi</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <!-- FontAwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <!-- Top bar with logo and social links (uses local images in assets/ if available) -->
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <!-- Logo: coloque su archivo en assets/logo-kombi.png -->
+        <div class="logo-wrap">
+          <a href="#">
+            <!-- Logo de ejemplo en SVG (reemplazar con assets/logo-kombi.png) -->
+            <svg class="logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="logoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" style="stop-color:#4DBFFF;stop-opacity:1" />
+                  <stop offset="100%" style="stop-color:#7FD3FF;stop-opacity:1" />
+                </linearGradient>
+              </defs>
+              <!-- Kombi simplificada -->
+              <circle cx="100" cy="60" r="45" fill="url(#logoGrad)" opacity="0.15"/>
+              <rect x="60" y="80" width="80" height="50" rx="8" fill="#4DBFFF"/>
+              <rect x="70" y="85" width="20" height="15" fill="#0f1720"/>
+              <rect x="110" y="85" width="20" height="15" fill="#0f1720"/>
+              <circle cx="80" cy="140" r="8" fill="#1a2535"/>
+              <circle cx="120" cy="140" r="8" fill="#1a2535"/>
+              <text x="100" y="170" font-family="Poppins, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#4DBFFF">LA KOMBI</text>
+            </svg>
+          </a>
+        </div>
+
+        <div class="socials">
+          <a class="social" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+            <img class="social-img" src="assets/facebook.png" alt="Facebook" />
+            <i class="fab fa-facebook-f"></i><span>Facebook</span>
+          </a>
+          <a class="social" href="https://wa.me/5491136129008" target="_blank" rel="noopener noreferrer">
+            <img class="social-img" src="assets/whatsapp.png" alt="WhatsApp" />
+            <i class="fab fa-whatsapp"></i><span>WhatsApp</span>
+          </a>
+          <a class="social" href="https://www.google.com/maps" target="_blank" rel="noopener noreferrer">
+            <img class="social-img" src="assets/maps.png" alt="Ubicación" />
+            <i class="fas fa-map-marker-alt"></i><span>Ubicación</span>
+          </a>
+          <a class="social" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+            <img class="social-img" src="assets/instagram.png" alt="Instagram" />
+            <i class="fab fa-instagram"></i><span>Instagram</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <header class="hero">
+      <div class="container hero-inner">
+        <p class="hours">Lunes a viernes: 9:00 a 18:00 hs — Sábados: 9:00 a 13:00 hs</p>
+        <h1 class="title">Lubricentro de la Kombi</h1>
+      </div>
+    </header>
+
+    <main class="container main-grid">
+      <section class="image-wrap">
+        <img class="main-image" src="https://images.unsplash.com/photo-1549921296-3f40a0f7c7af?q=80&w=1400&auto=format&fit=crop&ixlib=rb-4.0.3&s=3c0f7a5c5ea1c3d1f6e5d3f6f7a5b6c7" alt="Lubricentro"/>
+      </section>
+
+      <section class="form-wrap">
+        <form id="consultaForm" class="consulta-form" onsubmit="return false;">
+          <h2>Solicitud de consulta</h2>
+
+          <fieldset class="fieldset">
+            <legend>Datos del cliente</legend>
+            <div class="field-row">
+              <label for="clienteNombre">Nombre</label>
+              <input id="clienteNombre" name="clienteNombre" type="text" placeholder="Nombre y apellido" required />
+            </div>
+            <div class="field-row">
+              <label for="clienteTelefono">Teléfono</label>
+              <input id="clienteTelefono" name="clienteTelefono" type="tel" placeholder="Ej: 3414123456" required />
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Datos del vehículo</legend>
+            <div class="field-row">
+              <label for="marca">Marca</label>
+              <select id="marca" name="marca">
+                <option value="Ford">Ford</option>
+                <option value="Chevrolet">Chevrolet</option>
+                <option value="Fiat">Fiat</option>
+                <option value="Volkswagen">Volkswagen</option>
+                <option value="Renault">Renault</option>
+                <option value="Peugeot">Peugeot</option>
+                <option value="Toyota">Toyota</option>
+                <option value="Jeep">Jeep</option>
+                <option value="Otra">Otra</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <label for="anio">Año</label>
+              <select id="anio" name="anio"></select>
+            </div>
+
+            <div class="field-row">
+              <label for="modelo">Modelo</label>
+              <input id="modelo" name="modelo" type="text" placeholder="Modelo del vehículo" />
+            </div>
+
+            <div class="field-row">
+              <label for="tipoConsulta">Tipo de consulta</label>
+              <select id="tipoConsulta" name="tipoConsulta">
+                <option value="Cambio de aceite">Cambio de aceite</option>
+                <option value="Cambio de filtros">Cambio de filtros</option>
+                <option value="Consulta general">Consulta general</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Información técnica</legend>
+            <div class="field-row">
+              <label for="filtros">Filtros que lleva su vehículo</label>
+              <input id="filtros" name="filtros" type="text" placeholder="Ej: Aceite, Aire, Combustible" />
+            </div>
+            <div class="field-row">
+              <label for="kilometraje">Kilometraje actual</label>
+              <input id="kilometraje" name="kilometraje" type="number" placeholder="km" />
+            </div>
+
+            <div class="field-row">
+              <label for="cambioTipo">Cambio</label>
+              <select id="cambioTipo" name="cambioTipo">
+                <option value="Simple">Simple</option>
+                <option value="Completo">Completo</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <label for="viscosidad">Viscosidad</label>
+              <select id="viscosidad" name="viscosidad">
+                <option value="5W30">5W30</option>
+                <option value="10W40">10W40</option>
+                <option value="15W40">15W40</option>
+              </select>
+            </div>
+
+            <div class="field-row">
+              <label for="baseAceite">Tipo de aceite</label>
+              <select id="baseAceite" name="baseAceite">
+                <option value="Sintético">Sintético</option>
+                <option value="Semi-sintético">Semi-sintético</option>
+                <option value="Mineral">Mineral</option>
+              </select>
+            </div>
+          </fieldset>
+
+          <fieldset class="fieldset">
+            <legend>Detalle adicional</legend>
+            <textarea id="detalle" name="detalle" rows="5" placeholder="Describe detalles, ruidos, pedidos especiales..."></textarea>
+          </fieldset>
+
+          <div class="actions">
+            <button id="sendWhatsApp" class="btn btn-primary" type="button">Enviar consulta por WhatsApp <i class="fab fa-whatsapp"></i></button>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <button id="backToTop" class="back-to-top" title="Volver arriba"><i class="fas fa-chevron-up"></i></button>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2025 Lubricentro de la Kombi. Todos los derechos reservados.</p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+  </body>
+</html>
